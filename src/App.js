@@ -13,7 +13,37 @@ function App() {
        <Outlet />
      
            
-       <div className="flex flex-wrap  mt-4 md:flex justify-center items-center gap-10 h-[50vh]">  
+           {/* mobile view */}
+
+     
+           <div className="md:hidden flex flex-wrap justify-center gap-y-4 mt-4 mb-24">  
+            
+     
+            <Cards  
+            
+             imgSrc="./images/nature1.jpg" 
+             alt="nature"
+          
+            />  
+
+        <Cards 
+                  imgSrc="./images/nature2.jpg" 
+                  alt="nature"
+            
+          />
+
+         <Cards 
+                  imgSrc="./images/nature3.jpg" 
+                  alt="nature"
+            
+          />
+       
+        </div>
+
+
+
+           {/* laptop view */}
+       <div className="hidden md:flex justify-center items-center gap-10 h-[50vh]">  
             
      
               <Cards  

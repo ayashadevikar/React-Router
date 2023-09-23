@@ -59,9 +59,9 @@ const toggleActiveClass = () => {
      </div>
 
   {/* laptop view */}
-  <div className='bg-gray-500 py-[8px]'>
+  <div>
     
-        <ul className="hidden md:flex justify-between mx-10 my-6 text-white">
+        <ul className="hidden md:flex justify-between bg-gray-500 p-10 px-10  -mt-2 text-white">
           
             <Link to="/Home">
                 <li className='hover:text-blue-700'>Home</li>
