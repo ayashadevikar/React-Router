@@ -30,15 +30,15 @@ const toggleActiveClass = () => {
     <ul className={`block bg-pink-200 w-full p-2 
       ${isActive ?  'block' : 'hidden' }`}>
           
-        <Link to="/Home">
+        <Link to="/home">
             <li className='hover:text-blue-700'>Home</li>
         </Link>
 
-        <Link to="/About">
+        <Link to="/about">
              <li className='hover:text-blue-700'>About</li>
          </Link>
 
-         <Link to="/Contact">
+         <Link to="/contact">
               <li className='hover:text-blue-700'>Contact</li>
           </Link>
      </ul>
@@ -50,7 +50,7 @@ const toggleActiveClass = () => {
     
         <ul className="hidden md:flex justify-between bg-gray-500 p-10 px-10  -mt-2 text-white">
           
-            <Link to="/Home">
+            <Link to="/">
                 <li className='hover:text-blue-700'>Home</li>
             </Link>
 
