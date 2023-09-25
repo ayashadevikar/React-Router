@@ -19,30 +19,30 @@ const toggleActiveClass = () => {
     <>
 
    {/* mobile view */}
-   <div  className='md:hidden p-2'>
-   <i onClick={toggleActiveClass} className=
-   {`fas ${isActive ? "fa-times" : "fa-bars"}`}>
+   <div className='md:hidden p-2'>
+     <i onClick={toggleActiveClass} className=
+     {`fas ${isActive ? "fa-times" : "fa-bars"}`}>
    
    </i>
         
        
-  {isActive && (
-    <ul className="block bg-cyan-300 p-4">
+  
+    <ul className={`block bg-pink-200 w-full p-2 
+      ${isActive ?  'block' : 'hidden' }`}>
           
-    <Link to="/Home">
-        <li className='hover:text-blue-700'>Home</li>
-    </Link>
+        <Link to="/Home">
+            <li className='hover:text-blue-700'>Home</li>
+        </Link>
 
-    <Link to="/About">
-      <li className='hover:text-blue-700'>About</li>
-    </Link>
+        <Link to="/About">
+             <li className='hover:text-blue-700'>About</li>
+         </Link>
 
-   <Link to="/Contact">
-     <li className='hover:text-blue-700'>Contact</li>
-  </Link>
-</ul>
-  )}
-      
+         <Link to="/Contact">
+              <li className='hover:text-blue-700'>Contact</li>
+          </Link>
+     </ul>
+
      </div>
 
   {/* laptop view */}
