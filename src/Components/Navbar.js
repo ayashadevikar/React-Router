@@ -30,7 +30,7 @@ const toggleActiveClass = () => {
     <ul className={`block bg-pink-200 w-full p-2 
       ${isActive ?  'block' : 'hidden' }`}>
           
-        <Link to="/home">
+        <Link to="/">
             <li className='hover:text-blue-700'>Home</li>
         </Link>
 
